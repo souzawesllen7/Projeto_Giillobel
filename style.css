@@ -22,6 +22,8 @@ body {
             background-color: var(--c3);
             font-family: var(--fonte-padrão);
             margin: 20px;
+            background-image: url('Imagens/Chibi\ Diver\ in\ Classic\ Helmet.png');
+            background-size: 100px;
         }
 
 p {
