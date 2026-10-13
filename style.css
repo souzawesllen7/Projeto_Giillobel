@@ -59,6 +59,12 @@ nav {
             padding: 10px;
             box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
             transition: background-color 0.3s ease;
+            position: sticky;
+            top: 0;
+            index: 100;
+            border-bottom: 2px solid var(--c2);
+            backdrop-filter: blur(18px);
+            
         }
 
 nav a {
@@ -131,18 +137,17 @@ p   {
             line-height: 1.5;
     }
 
-ul {
-            list-style-type: disc;
-            list-style-position: inside;
-            margin-left: 20px;
-            columns: 2; /* Define o número de colunas */
-        }   
-
+table
     img {
-  width: 300px; /* Define uma largura fixa */
-  height: auto; /* Mantém a proporção original */
+  width: 400px; /* Define uma largura fixa */
+  border-collapse: collapse; /* Mantém a proporção original */
 }
 
+td, th {
+  border: 1px solid var(--c2);
+  padding: 8px;
+  text-align: left;
+}
 footer {
             background-color: var(--c1);
             color: var(--c3);
