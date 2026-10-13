@@ -18,10 +18,16 @@
     padding: 0;
 }
 
-body {
+body {      
+            height: 100vh;
             background-color: var(--c3);
             font-family: var(--fonte-padrão);
             margin: 20px;
+            background-image: url("Imagens/Lone\ Diver\ Beneath\ Sunlit\ Waters.png"); /* caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
 html {
@@ -40,10 +46,12 @@ header {
   background-position: center 50%;  /* centraliza a parte visível */
   background-repeat: no-repeat;
   color: white;
-  padding: 40px 30px;
+  padding: 50px 40px;
   min-height: 200px;            /* altura do header */
   font-family: var(--fonte-padrão);
   font-size: 1.2em;
+  padding-top: 50px;
+  posicion: relative;
 }
 nav {
             background-color: var(--c1);
@@ -70,6 +78,7 @@ main {
     margin: 10px 0px;
 
 }
+
 
 section {
   margin-bottom: 70px;
