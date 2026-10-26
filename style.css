@@ -18,10 +18,16 @@
     padding: 0;
 }
 
-body {
+body {      
+            height: 100vh;
             background-color: var(--c3);
             font-family: var(--fonte-padrão);
             margin: 20px;
+            background-image: url("Imagens/Lone\ Diver\ Beneath\ Sunlit\ Waters.png"); /* caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
 html {
@@ -40,10 +46,12 @@ header {
   background-position: center 50%;  /* centraliza a parte visível */
   background-repeat: no-repeat;
   color: white;
-  padding: 40px 30px;
+  padding: 50px 40px;
   min-height: 200px;            /* altura do header */
   font-family: var(--fonte-padrão);
   font-size: 1.2em;
+  padding-top: 50px;
+  position: relative;
 }
 nav {
             background-color: var(--c1);
@@ -51,6 +59,11 @@ nav {
             padding: 10px;
             box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
             transition: background-color 0.3s ease;
+            position: sticky;
+            top: -1px;
+            z-index: 100;
+            border-bottom: 2px solid var(--c2);
+            backdrop-filter: blur(18px);
         }
 
 nav a {
@@ -70,6 +83,7 @@ main {
     margin: 10px 0px;
 
 }
+
 
 section {
   margin-bottom: 70px;
@@ -122,21 +136,26 @@ p   {
             line-height: 1.5;
     }
 
-ul {
-            list-style-type: disc;
-            list-style-position: inside;
-            margin-left: 20px;
-            columns: 2; /* Define o número de colunas */
-        }   
-
+table
     img {
-  width: 300px; /* Define uma largura fixa */
-  height: auto; /* Mantém a proporção original */
+  width: 400px; /* Define uma largura fixa */
+  border-collapse: collapse; /* Mantém a proporção original */
 }
 
+div#container {
+  overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+  margin-bottom: 20px; /* Espaço abaixo da tabela */
+}
+
+td, th {
+  border: 1px solid var(--c2);
+  padding: 8px;
+  text-align: left;
+}
 footer {
             background-color: var(--c1);
             color: var(--c3);
             padding: 10px;
             text-align: center;
+            color: var(--c3);
         }
